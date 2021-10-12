@@ -2,12 +2,18 @@ export default {
   name: "siteSettings",
   type: "document",
   title: "Site Settings",
-  __experimental_actions: ["update", /* 'create', 'delete', */ "publish"],
+  __experimental_actions: ["update", /* ""create"", ""delete"", */ "publish"],
   fields: [
     {
       name: "title",
       type: "string",
       title: "Title",
+    },
+    {
+      name: "subtitle",
+      type: "string",
+      title: "Subtitle",
+      description: "Keep it short and sweet!",
     },
     {
       name: "description",
